@@ -110,4 +110,5 @@ void cg::renderer::ray_tracing_renderer::render()
 	std::chrono::duration<float, std::milli> duration = stop - start;
 	std::cout << "Raytracing took " << duration.count() << " ms\n";
 	cg::utils::save_resource(*render_target, settings->result_path);
+	
 }
